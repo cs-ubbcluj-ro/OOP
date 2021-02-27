@@ -25,7 +25,7 @@ int nullDanglingPointers()
 	// ------------------------------------------------------------------------------------
 	// Dangling pointer
 	int* p2 = f();
-	//printf("p2: %d.\n", *p2); // this is undefined behaviour!!!
+	// printf("p2: %d.\n", *p2); // this is undefined behaviour!!!
 
 	int* p3 = NULL;
 	{

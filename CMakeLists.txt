@@ -15,4 +15,14 @@ add_executable(OOP
         Lectures/Lecture_1/ReadWrite.c
         Lectures/Lecture_1/Statements.c
         Lectures/Lecture_1/StructExample.c
+        Lectures/Lecture_2/ConstPointers.c
+        Lectures/Lecture_2/DynamicArray.h
+        Lectures/Lecture_2/DynamicArray.c
+        Lectures/Lecture_2/DynamicMemoryManagement.cpp
+        Lectures/Lecture_2/DynamicMemoryManagementC.c
+        Lectures/Lecture_2/main.c
+        Lectures/Lecture_2/NullDanglingPointers.c
+        Lectures/Lecture_2/Planet.c
+        Lectures/Lecture_2/Planet.h
+        Lectures/Lecture_2/PointersToFunctions.c
         )
