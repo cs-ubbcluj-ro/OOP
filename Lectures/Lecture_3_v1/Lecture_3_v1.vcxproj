@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{99e47705-fc50-4d36-b7a8-947be832b299}</ProjectGuid>
-    <RootNamespace>Lecture2</RootNamespace>
+    <ProjectGuid>{7fe3d477-c29b-426c-bdde-90717ca2a3ac}</ProjectGuid>
+    <RootNamespace>Lecture3v1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -86,7 +86,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -139,18 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConstPointers.c" />
-    <ClCompile Include="DynamicArray.c" />
-    <ClCompile Include="DynamicMemoryManagement.cpp" />
-    <ClCompile Include="DynamicMemoryManagementC.c" />
-    <ClCompile Include="main.c" />
-    <ClCompile Include="NullDanglingPointers.c" />
-    <ClCompile Include="Planet.c" />
-    <ClCompile Include="PointersToFunctions.c" />
+    <ClCompile Include="..\Lecture_3\vector_ex1.cpp" />
+    <ClCompile Include="..\Lecture_3\vector_v1\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DynamicArray.h" />
-    <ClInclude Include="Planet.h" />
+    <ClInclude Include="..\Lecture_3\vector_v1\Vector2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

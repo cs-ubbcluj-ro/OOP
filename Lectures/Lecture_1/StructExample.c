@@ -17,7 +17,7 @@ void structExample() {
     printf("Car 1 fabrication year: %d, Km: %d \n", car1.year, car1.km);
 
     //!!! car2 fields are uninitialised => crash
-    printf("Car 2 fabrication year: %d, Km: %d \n", car2.year, car2.km);
+    //printf("Car 2 fabrication year: %d, Km: %d \n", car2.year, car2.km);
 
     // initialize car2
     car2 = car1;
