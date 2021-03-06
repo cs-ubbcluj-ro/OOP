@@ -25,4 +25,16 @@ add_executable(OOP
         Lectures/Lecture_2/Planet.c
         Lectures/Lecture_2/Planet.h
         Lectures/Lecture_2/PointersToFunctions.c
+        Lectures/Lecture_3/c_plus.cpp
+        Lectures/Lecture_3/vector_ex1.cpp
+        Lectures/Lecture_3/vector_ex2.cpp
+        Lectures/Lecture_3/vector_ex3.cpp
+        Lectures/Lecture_3/vector_v1/Vector2D.h
+        Lectures/Lecture_3/vector_v1/Vector2D.cpp
+        Lectures/Lecture_3/vector_v2/Vector2D.h
+        Lectures/Lecture_3/vector_v2/Vector2D.cpp
+        Lectures/Lecture_3/vector_v3/Vector2D.h
+        Lectures/Lecture_3/vector_v3/Vector2D.cpp
+        Lectures/Lecture_3/vector_v3/DynamicVector.h
+        Lectures/Lecture_3/vector_v3/DynamicVector.cpp
         )
