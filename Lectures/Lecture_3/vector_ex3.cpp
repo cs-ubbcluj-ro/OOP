@@ -62,6 +62,6 @@ void vector2d_example_3() {
     std::cout << "There are " << Vector2D::getNumberOfInstances() << " objects of class Vector2D." << std::endl;
 }
 
-int main() {
-    vector2d_example_3();
-}
+//int main() {
+//    vector2d_example_3();
+//}
