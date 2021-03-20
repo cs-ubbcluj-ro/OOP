@@ -9,8 +9,9 @@ namespace VectorTwo {
 
     public:
         // default constructor
-        // Vector2D();
+//         Vector2D();
         Vector2D(double x = 0, double y = 0);
+
 
         // constructor with parameters
         //Vector2D(double x, double y);

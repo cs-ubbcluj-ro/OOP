@@ -38,4 +38,8 @@ add_executable(OOP
         Lectures/Lecture_3/vector_v3/DynamicVector.h
         Lectures/Lecture_3/vector_v3/DynamicVector.cpp
         Lectures/Lecture_4/FunctionTemplate.cpp
+        Lectures/Lecture_4/DynamicVector.h
+        Lectures/Lecture_4/DynamicVector_demo.cpp
+        Lectures/Lecture_4/Pair.h
+        Lectures/Lecture_4/stl_demo.cpp
         )
