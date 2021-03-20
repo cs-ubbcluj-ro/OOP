@@ -42,4 +42,11 @@ add_executable(OOP
         Lectures/Lecture_4/DynamicVector_demo.cpp
         Lectures/Lecture_4/Pair.h
         Lectures/Lecture_4/stl_demo.cpp
+        Lectures/Lecture_5/Animal.h
+        Lectures/Lecture_5/Animal.cpp
+        Lectures/Lecture_5/Dog.h
+        Lectures/Lecture_5/Dog.cpp
+        Lectures/Lecture_5/Penguin.h
+        Lectures/Lecture_5/Penguin.cpp
+        Lectures/Lecture_5/demo.cpp
         )

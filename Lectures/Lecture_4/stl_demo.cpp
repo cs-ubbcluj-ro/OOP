@@ -125,6 +125,6 @@ void stl_demo() {
     result = multiply_and_add_ref(10);
 }
 
-int main() {
-    stl_demo();
-}
+//int main() {
+//    stl_demo();
+//}
