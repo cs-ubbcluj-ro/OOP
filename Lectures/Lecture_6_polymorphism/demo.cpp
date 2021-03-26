@@ -1,10 +1,6 @@
-#include "polymorphism/Penguin.h"
-#include "polymorphism/Dog.h"
+#include "Penguin.h"
+#include "Dog.h"
 #include <iostream>
-
-#ifdef _DEBUG
-#include "debug_new.h"
-#endif
 
 using namespace std;
 using namespace polymorphism;

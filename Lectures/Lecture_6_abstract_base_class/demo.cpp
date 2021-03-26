@@ -1,6 +1,6 @@
-#include "abstract_base_class/Penguin.h"
-#include "abstract_base_class/Dog.h"
-#include "abstract_base_class/Zoo.h"
+#include "Penguin.h"
+#include "Dog.h"
+#include "Zoo.h"
 #include <iostream>
 #include <vector>
 
