@@ -33,7 +33,7 @@ void pointersAndInheritance() {
     cout << animal->toString() << endl;
 
     Penguin *penguin = new Penguin{"black and white", 12, "Imperial"};
-    animal = penguin;    // this is allowed;
+//    animal = penguin;    // this is allowed;
     // In this particular case, is it correct, or can you identify an error? Hint: look at the deallocation at the end of the function.
 
     cout << animal->toString() << endl;
@@ -65,18 +65,18 @@ void demo() {
 
     // ---------------------------------------------------------------------------------------------------
     //Substitution principle
-    substitutionPrinciple();
+//    substitutionPrinciple();
 
     // ---------------------------------------------------------------------------------------------------
     // Pointers and inheritance
-    pointersAndInheritance();
+//    pointersAndInheritance();
 
     // ---------------------------------------------------------------------------------------------------
     // Method orverriding
-    methodOverriding();
+//    methodOverriding();
 }
 
-int main() {
-    demo();
-    return 0;
-}
+//int main() {
+//    demo();
+//    return 0;
+//}

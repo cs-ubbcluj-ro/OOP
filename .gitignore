@@ -1,6 +1,7 @@
 Debug
 .vs
 cmake-build-debug
+cmake-build-debug-coverage
 .idea
 .DS_Store
 /Lectures/Lecture_5/.opencppcov/Lecture_5/Debug_x86.json

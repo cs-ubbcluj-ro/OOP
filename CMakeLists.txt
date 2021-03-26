@@ -49,4 +49,22 @@ add_executable(OOP
         Lectures/Lecture_5/Penguin.h
         Lectures/Lecture_5/Penguin.cpp
         Lectures/Lecture_5/demo.cpp
+        Lectures/Lecture_6/polymorphism/Animal.h
+        Lectures/Lecture_6/polymorphism/Animal.cpp
+        Lectures/Lecture_6/polymorphism/Dog.h
+        Lectures/Lecture_6/polymorphism/Dog.cpp
+        Lectures/Lecture_6/polymorphism/Penguin.h
+        Lectures/Lecture_6/polymorphism/Penguin.cpp
+        Lectures/Lecture_6/demo_polymorphism.cpp
+        Lectures/Lecture_6/abstract_base_class/Animal.h
+        Lectures/Lecture_6/abstract_base_class/Animal.cpp
+        Lectures/Lecture_6/abstract_base_class/Dog.h
+        Lectures/Lecture_6/abstract_base_class/Dog.cpp
+        Lectures/Lecture_6/abstract_base_class/Filter.h
+        Lectures/Lecture_6/abstract_base_class/Penguin.h
+        Lectures/Lecture_6/abstract_base_class/Penguin.cpp
+        Lectures/Lecture_6/abstract_base_class/Zoo.h
+        Lectures/Lecture_6/abstract_base_class/Zoo.cpp
+        Lectures/Lecture_6/demo_polymorphism.cpp
+        Lectures/Lecture_6/demo_abstract_base_class.cpp
         )
