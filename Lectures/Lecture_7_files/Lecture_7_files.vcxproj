@@ -21,13 +21,13 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{93708199-27e6-4293-809f-673d6d61e411}</ProjectGuid>
-    <RootNamespace>Lecture6abstractbaseclass</RootNamespace>
+    <ProjectGuid>{ec78b1fa-4198-41d7-b2f3-2114c7d30888}</ProjectGuid>
+    <RootNamespace>Lecture7files</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -139,18 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Animal.cpp" />
-    <ClCompile Include="demo.cpp" />
-    <ClCompile Include="Dog.cpp" />
-    <ClCompile Include="Penguin.cpp" />
-    <ClCompile Include="Zoo.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Spaceship.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animal.h" />
-    <ClInclude Include="Dog.h" />
-    <ClInclude Include="Filter.h" />
-    <ClInclude Include="Penguin.h" />
-    <ClInclude Include="Zoo.h" />
+    <Text Include="Names.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Spaceship.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Spaceships.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

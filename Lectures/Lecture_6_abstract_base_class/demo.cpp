@@ -71,10 +71,10 @@ void filterAnimals() {
 
 // ------------------------------------------------------------------------------------------------------
 
-int main() {
-    homogenousContainer();
-
-    filterAnimals();
-
-    return 0;
-}
+//int main() {
+//    homogenousContainer();
+//
+//    filterAnimals();
+//
+//    return 0;
+//}
