@@ -65,4 +65,17 @@ add_executable(OOP
         Lectures/Lecture_6_polymorphism/Dog.h
         Lectures/Lecture_6_polymorphism/Dog.cpp
         Lectures/Lecture_6_polymorphism/Penguin.h
-        Lectures/Lecture_6_polymorphism/Penguin.cpp)
+        Lectures/Lecture_6_polymorphism/Penguin.cpp
+        Lectures/Lecture_7_streams/Animal.h
+        Lectures/Lecture_7_streams/Animal.cpp
+        Lectures/Lecture_7_streams/main.cpp
+        Lectures/Lecture_7_streams/Penguin.h
+        Lectures/Lecture_7_streams/Penguin.cpp
+        Lectures/Lecture_7_files/main.cpp
+        Lectures/Lecture_7_files/Spaceship.h
+        Lectures/Lecture_7_files/Spaceship.cpp
+        Lectures/Lecture_7_exceptions/main.cpp
+        Lectures/Lecture_7_exceptions/Spaceship.h
+        Lectures/Lecture_7_exceptions/Spaceship.cpp
+        Lectures/Lecture_7_exceptions/SpaceshipValidator.h
+        Lectures/Lecture_7_exceptions/SpaceshipValidator.cpp        )

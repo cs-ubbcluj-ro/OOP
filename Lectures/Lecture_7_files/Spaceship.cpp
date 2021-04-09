@@ -4,9 +4,12 @@
 
 using namespace std;
 
-Spaceship::Spaceship(const std::string & _name, const std::string & _captain, const std::string & _type): name{_name}, captain{_captain}, type{_type}
-{
-}
+namespace Lecture_7_files {
+
+    Spaceship::Spaceship(const std::string &_name, const std::string &_captain, const std::string &_type) : name{_name},
+                                                                                                            captain{_captain},
+                                                                                                            type{_type} {
+    }
 
 /*
 	Tokenizes a string.
@@ -14,34 +17,32 @@ Spaceship::Spaceship(const std::string & _name, const std::string & _captain, co
 			delimiter - char - the delimiter used for tokenization
 	Output: a vector of strings, containing the tokens
 */
-vector<string> tokenize(string str, char delimiter)
-{
-	vector <string> result;
-	stringstream ss(str);
-	string token;
-	while (getline(ss, token, delimiter))
-		result.push_back(token);
+    vector<string> tokenize(string str, char delimiter) {
+        vector<string> result;
+        stringstream ss(str);
+        string token;
+        while (getline(ss, token, delimiter))
+            result.push_back(token);
 
-	return result;
-}
+        return result;
+    }
 
-std::istream & operator>>(std::istream & is, Spaceship & s)
-{
-	string line;
-	getline(is, line);
+    std::istream &operator>>(std::istream &is, Spaceship &s) {
+        string line;
+        getline(is, line);
 
-	vector<string> tokens = tokenize(line, ',');
-	if (tokens.size() != 3) // make sure all the starship data was valid
-		return is;
-	s.name = tokens[0];
-	s.captain = tokens[1];
-	s.type = tokens[2];
+        vector<string> tokens = tokenize(line, ',');
+        if (tokens.size() != 3) // make sure all the starship data was valid
+            return is;
+        s.name = tokens[0];
+        s.captain = tokens[1];
+        s.type = tokens[2];
 
-	return is;
-}
+        return is;
+    }
 
-std::ostream & operator<<(std::ostream & os, const Spaceship & s)
-{
-	os << s.name << "," << s.captain << "," << s.type << "\n";
-	return os;
+    std::ostream &operator<<(std::ostream &os, const Spaceship &s) {
+        os << s.name << "," << s.captain << "," << s.type << "\n";
+        return os;
+    }
 }

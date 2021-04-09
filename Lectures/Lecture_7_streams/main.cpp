@@ -7,6 +7,7 @@
 #include <string>
 
 using namespace std;
+using namespace Lecture_7_streams;
 
 void overloadIOOperators()
 {

@@ -1,22 +1,24 @@
 #pragma once
+
 #include "Animal.h"
 
-class Penguin: public Animal
-{
-private:
-	std::string type;
-	std::string rankAndOccupation;
+namespace Lecture_7_streams {
+    class Penguin : public Animal {
+    private:
+        std::string type;
+        std::string rankAndOccupation;
 
-public:
-	Penguin(std::string _colour, double _weight, std::string _type, std::string _rankAndOccupation);
-	~Penguin();
+    public:
+        Penguin(std::string _colour, double _weight, std::string _type, std::string _rankAndOccupation);
 
-	std::string getType() const;
+        ~Penguin();
 
-	//std::string toString() const;
+        std::string getType() const;
 
-	std::string toString() const override;
+        //std::string toString() const;
 
-	friend std::ostream& operator<<(std::ostream& stream, const Penguin& p);
-};
+        std::string toString() const override;
 
+        friend std::ostream &operator<<(std::ostream &stream, const Penguin &p);
+    };
+}

@@ -16,7 +16,7 @@ namespace polymorphism {
 
         //std::string toString() const;
 
-        std::string toString() const override;
+        std::string toString() const ;
 
     };
 }

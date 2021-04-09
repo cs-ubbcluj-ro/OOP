@@ -1,27 +1,32 @@
 #pragma once
+
 #include <string>
 #include <iostream>
 
-class Animal
-{
-protected:
-	std::string colour;
-	double weight;
+namespace Lecture_7_streams {
+    class Animal {
+    protected:
+        std::string colour;
+        double weight;
 
-public:
-	Animal() : colour{ "" }, weight{ 0 } {}
-	Animal(std::string _colour, double _weight);
-	~Animal();
-	//virtual ~Animal();
+    public:
+        Animal() : colour{""}, weight{0} {}
 
-	std::string getColour() const;
-	double getWeight() const;
+        Animal(std::string _colour, double _weight);
 
-	//std::string toString() const;
+        ~Animal();
+        //virtual ~Animal();
 
-	virtual std::string toString() const;	// allows polymorphism
+        std::string getColour() const;
 
-	friend std::istream& operator>>(std::istream& stream, Animal& a);
-	friend std::ostream& operator<<(std::ostream& stream, const Animal& a);
-};
+        double getWeight() const;
 
+        //std::string toString() const;
+
+        virtual std::string toString() const;    // allows polymorphism
+
+        friend std::istream &operator>>(std::istream &stream, Animal &a);
+
+        friend std::ostream &operator<<(std::ostream &stream, const Animal &a);
+    };
+}

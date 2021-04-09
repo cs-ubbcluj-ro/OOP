@@ -1,30 +1,31 @@
 #pragma once
+
 #include <string>
 #include "Spaceship.h"
 
-class ValidationException
-{
-private:
-	std::string message;
+namespace Lecture_7_exceptions {
+    class ValidationException {
+    private:
+        std::string message;
 
-public:
-	ValidationException(std::string _message);
-	std::string getMessage() const;
-};
+    public:
+        ValidationException(std::string _message);
 
-class ValidationExceptionInherited : public std::exception
-{
-private:
-	std::string message;
+        std::string getMessage() const;
+    };
 
-public:
-	ValidationExceptionInherited(std::string _message);
-	const char* what() const noexcept override;
-};
+    class ValidationExceptionInherited : public std::exception {
+    private:
+        std::string message;
 
-class SpaceshipValidator
-{
-public:
-	static void validate(const Spaceship& s);
-};
+    public:
+        ValidationExceptionInherited(std::string _message);
 
+        const char *what() const noexcept override;
+    };
+
+    class SpaceshipValidator {
+    public:
+        static void validate(const Spaceship &s);
+    };
+}

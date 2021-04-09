@@ -3,6 +3,7 @@
 #include "SpaceshipValidator.h"
 
 using namespace std;
+using namespace Lecture_7_exceptions;
 
 class MyException : public std::exception
 {
@@ -150,19 +151,19 @@ void testSpaceshipException()
 
 // -----------------------------------------------------------------------------------------------------------------------------
 
-int main()
-{
-	/*exceptionHandling(true);
-	exceptionHandling(false);
-
-	exceptionExecutionFlowFct2();
-*/
-
-	multipleHandlers("A");
-	multipleHandlers("B");
-	multipleHandlers("");
-	
-	testSpaceshipException();
-
-	return 0;
-}
+//int main()
+//{
+//	/*exceptionHandling(true);
+//	exceptionHandling(false);
+//
+//	exceptionExecutionFlowFct2();
+//*/
+//
+//	multipleHandlers("A");
+//	multipleHandlers("B");
+//	multipleHandlers("");
+//
+//	testSpaceshipException();
+//
+//	return 0;
+//}
