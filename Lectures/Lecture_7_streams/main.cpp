@@ -133,16 +133,16 @@ void testTabManipulator()
 
 // ------------------------------------------------------------------------------------------------------------
 
-int main()
-{
-	overloadIOOperators();
-
-	formatOutput();
-
-	formattedPenguinData();
-
-	formattedPenginDataManipulators();
-
-	testTabManipulator();
-	return 0;
-}
+//int main()
+//{
+//	overloadIOOperators();
+//
+//	formatOutput();
+//
+//	formattedPenguinData();
+//
+//	formattedPenginDataManipulators();
+//
+//	testTabManipulator();
+//	return 0;
+//}
