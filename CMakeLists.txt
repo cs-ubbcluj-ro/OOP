@@ -2,6 +2,13 @@ cmake_minimum_required(VERSION 3.17)
 project(OOP)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_PREFIX_PATH "/Users/arthur/Qt/5.15.2/clang_64/lib/cmake")
+set(QT_VERSION 5)
+set(REQUIRED_LIBS Core Gui Widgets)
+set(REQUIRED_LIBS_QUALIFIED Qt5::Core Qt5::Gui Qt5::Widgets)
 
 add_executable(OOP
         Lectures/Lecture_1/Arrays.c
@@ -78,4 +85,74 @@ add_executable(OOP
         Lectures/Lecture_7_exceptions/Spaceship.h
         Lectures/Lecture_7_exceptions/Spaceship.cpp
         Lectures/Lecture_7_exceptions/SpaceshipValidator.h
-        Lectures/Lecture_7_exceptions/SpaceshipValidator.cpp        )
+        Lectures/Lecture_7_exceptions/SpaceshipValidator.cpp
+        Lectures/Lecture_8/hello_world/lecture9_demo_hello_world.h
+        Lectures/Lecture_8/hello_world/lecture9_demo_hello_world.cpp
+        Lectures/Lecture_8/hello_world/main.cpp
+        Lectures/Lecture_8/widgets/lecture9_demo_widgets.h
+        Lectures/Lecture_8/widgets/lecture9_demo_widgets.cpp
+        Lectures/Lecture_8/widgets/main.cpp
+        Lectures/Lecture_8/qt_designer/lecture9_demo_qt_designer.h
+        Lectures/Lecture_8/qt_designer/lecture9_demo_qt_designer.cpp
+        Lectures/Lecture_8/qt_designer/programaticallydesignedwidget.hpp
+        Lectures/Lecture_8/qt_designer/programaticallydesignedwidget.cpp
+        Lectures/Lecture_8/qt_designer/main.cpp
+        Lectures/Lecture_9/drawing/Drawing.h
+        Lectures/Lecture_9/drawing/Drawing.cpp
+        Lectures/Lecture_9/drawing/main.cpp
+        Lectures/Lecture_9/introspection/IntrospectionExample.h
+        Lectures/Lecture_9/introspection/IntrospectionExample.cpp
+        Lectures/Lecture_9/introspection/MyClass.h
+        Lectures/Lecture_9/introspection/MyClass.cpp
+        Lectures/Lecture_9/introspection/main.cpp
+        Lectures/Lecture_9/notepad/Lecture10_demo_Notepad.h
+        Lectures/Lecture_9/notepad/Lecture10_demo_Notepad.cpp
+        Lectures/Lecture_9/notepad/main.cpp
+        Lectures/Lecture_9/spinslider/Lecture10_demo_spin_slider.h
+        Lectures/Lecture_9/spinslider/Lecture10_demo_spin_slider.cpp
+        Lectures/Lecture_9/spinslider/main.cpp
+        Lectures/Lecture_9/genes/Gene.h
+        Lectures/Lecture_9/genes/Gene.cpp
+        Lectures/Lecture_9/genes/GenesGUI.h
+        Lectures/Lecture_9/genes/GenesGUI.cpp
+        Lectures/Lecture_9/genes/Lecture10_demo.h
+        Lectures/Lecture_9/genes/Lecture10_demo.cpp
+        Lectures/Lecture_9/genes/main.cpp
+        Lectures/Lecture_10/genes/DialogGenesListWidget.h
+        Lectures/Lecture_10/genes/DialogGenesListWidget.cpp
+        Lectures/Lecture_10/genes/DialogGenesView.h
+        Lectures/Lecture_10/genes/DialogGenesView.cpp
+        Lectures/Lecture_10/genes/GeneRepository.h
+        Lectures/Lecture_10/genes/GeneRepository.cpp
+        Lectures/Lecture_10/genes/lecture11_demo.h
+        Lectures/Lecture_10/genes/lecture11_demo.cpp
+        Lectures/Lecture_10/genes/main.cpp
+        Lectures/Lecture_10/genes_custom_model/GeneRepository.h
+        Lectures/Lecture_10/genes_custom_model/GeneRepository.cpp
+        Lectures/Lecture_10/genes_custom_model/GenesTableModel.h
+        Lectures/Lecture_10/genes_custom_model/GenesTableModel.cpp
+        Lectures/Lecture_10/genes_custom_model/lecture11_demo_custom_models.h
+        Lectures/Lecture_10/genes_custom_model/lecture11_demo_custom_models.cpp
+        Lectures/Lecture_10/genes_custom_model/PaginatedGenesTableModel.h
+        Lectures/Lecture_10/genes_custom_model/PaginatedGenesTableModel.cpp
+        Lectures/Lecture_10/genes_custom_model/PictureDelegate.h
+        Lectures/Lecture_10/genes_custom_model/PictureDelegate.cpp
+        Lectures/Lecture_10/genes_custom_model/main.cpp
+        )
+
+file(COPY Lectures/Lecture_10/genes/Ecoli_genes.txt
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Lectures/Lecture_10/genes_custom_model/Ecoli.jpg
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Lectures/Lecture_10/genes_custom_model/Genes.txt
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Lectures/Lecture_10/genes_custom_model/human.jpg
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
+if (NOT CMAKE_PREFIX_PATH)
+    message(WARNING "CMAKE_PREFIX_PATH is not defined, you may need to set it "
+            "(-DCMAKE_PREFIX_PATH=\"path/to/Qt/lib/cmake\" or -DCMAKE_PREFIX_PATH=/usr/include/{host}/qt{version}/ on Ubuntu)")
+endif ()
+
+find_package(Qt${QT_VERSION} COMPONENTS ${REQUIRED_LIBS} REQUIRED)
+target_link_libraries(${PROJECT_NAME} ${REQUIRED_LIBS_QUALIFIED})
