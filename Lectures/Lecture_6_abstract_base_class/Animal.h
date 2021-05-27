@@ -21,4 +21,10 @@ namespace abstract_base_class {
 
         virtual void speak() const = 0;
     };
+
+
+//    class Mammal : public Animal {
+//
+//    };
+
 }

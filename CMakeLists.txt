@@ -138,6 +138,12 @@ add_executable(OOP
         Lectures/Lecture_10/genes_custom_model/PictureDelegate.h
         Lectures/Lecture_10/genes_custom_model/PictureDelegate.cpp
         Lectures/Lecture_10/genes_custom_model/main.cpp
+        Lectures/Lecture_11/main.cpp
+        Lectures/Lecture_11/SmartPointer.h
+        Lectures/Lecture_11/SmartPointer.cpp
+        Lectures/Lecture_11/SmartPointerTemplate.h
+        Lectures/Lecture_11/Spaceship.h
+        Lectures/Lecture_11/Spaceship.cpp
         )
 
 file(COPY Lectures/Lecture_10/genes/Ecoli_genes.txt

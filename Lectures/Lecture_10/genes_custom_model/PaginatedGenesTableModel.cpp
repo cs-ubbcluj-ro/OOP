@@ -7,7 +7,7 @@
 
 const int PaginatedGenesTableModel::ITEMS_PER_PAGE = 10;
 
-PaginatedGenesTableModel::PaginatedGenesTableModel(GeneRepository& r, QObject* parent) : QAbstractTableModel{ parent }, repo{ r }
+PaginatedGenesTableModel::PaginatedGenesTableModel(GeneRepository& r, QObject* parent) : QAbstractTableModel(parent), repo{ r }
 {
 	this->loadedRows = 0;
 }

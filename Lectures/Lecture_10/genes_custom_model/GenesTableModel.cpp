@@ -58,15 +58,15 @@ QVariant GenesTableModel::data(const QModelIndex & index, int role) const
 			break;
 		}
 	}
-	if (role == Qt::FontRole) 
+	if (role == Qt::FontRole)
 	{
 		QFont font("Times", 15, 10, true);
 		font.setItalic(false);
 		return font;
 	}
-	if (role == Qt::BackgroundRole) 
+	if (role == Qt::BackgroundRole)
 	{
-		if (row % 2 == 1) 
+		if (row % 2 == 1)
 		{
 			return QBrush{ QColor{0, 250, 154} };
 		}
