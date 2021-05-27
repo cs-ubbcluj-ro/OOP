@@ -183,17 +183,17 @@ void exampleWeakPtr()
 }
 */
 
-int main()
-{
-	// unique pointer
-	exampleUniquePtr();
-
-	// shared pointer
-	exampleSharedPtr();
-
-	// weak pointer
-	teamMembersSharedPtr();
-	//exampleWeakPtr();
-
-	return 0;
-}
+//int main()
+//{
+//	// unique pointer
+//	exampleUniquePtr();
+//
+//	// shared pointer
+//	exampleSharedPtr();
+//
+//	// weak pointer
+//	teamMembersSharedPtr();
+//	//exampleWeakPtr();
+//
+//	return 0;
+//}

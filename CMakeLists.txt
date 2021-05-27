@@ -144,7 +144,47 @@ add_executable(OOP
         Lectures/Lecture_11/SmartPointerTemplate.h
         Lectures/Lecture_11/Spaceship.h
         Lectures/Lecture_11/Spaceship.cpp
-        )
+        Lectures/Lecture_12/adapter/Adapter.h
+        Lectures/Lecture_12/adapter/Castle.h
+        Lectures/Lecture_12/adapter/Controller.h
+        Lectures/Lecture_12/adapter/Controller.cpp
+        Lectures/Lecture_12/adapter/PaymentService.h
+        Lectures/Lecture_12/adapter/lecture12_demo_adapter.h
+        Lectures/Lecture_12/adapter/lecture12_demo_adapter.cpp
+        Lectures/Lecture_12/adapter/main.cpp
+        Lectures/Lecture_12/composite/Graphic.cpp
+        Lectures/Lecture_12/composite/Graphic.h
+        Lectures/Lecture_12/composite/lecture12_demo_composite.cpp
+        Lectures/Lecture_12/composite/lecture12_demo_composite.h
+        Lectures/Lecture_12/composite/main.cpp
+        Lectures/Lecture_12/composite/mywidget.cpp
+        Lectures/Lecture_12/composite/mywidget.h
+        Lectures/Lecture_12/iterator/Castle.h
+        Lectures/Lecture_12/iterator/Iterator.h
+        Lectures/Lecture_12/iterator/Iterator.cpp
+        Lectures/Lecture_12/iterator/lecture12_demo_iterator.h
+        Lectures/Lecture_12/iterator/lecture12_demo_iterator.cpp
+        Lectures/Lecture_12/iterator/main.cpp
+        Lectures/Lecture_12/iterator/Multimap.h
+        Lectures/Lecture_12/iterator/Multimap.cpp
+        Lectures/Lecture_12/observer/Auctioneer.h
+        Lectures/Lecture_12/observer/Auctioneer.cpp
+        Lectures/Lecture_12/observer/auctionleader.cpp
+        Lectures/Lecture_12/observer/auctionleader.h
+        Lectures/Lecture_12/observer/BidderWithDescription.h
+        Lectures/Lecture_12/observer/BidderWithDescription.cpp
+        Lectures/Lecture_12/observer/BidderWithPhoto.cpp
+        Lectures/Lecture_12/observer/BidderWithPhoto.h
+        Lectures/Lecture_12/observer/lecture12_demo_observer.h
+        Lectures/Lecture_12/observer/lecture12_demo_observer.cpp
+        Lectures/Lecture_12/observer/Observer.h
+        Lectures/Lecture_12/observer/main.cpp
+        Lectures/Lecture_12/strategy/lecture12_demo_strategy.h
+        Lectures/Lecture_12/strategy/lecture12_demo_strategy.cpp
+        Lectures/Lecture_12/strategy/main.cpp
+        Lectures/Lecture_12/strategy/SaveFileStrategy.cpp
+        Lectures/Lecture_12/strategy/SaveFileStrategy.h
+        Lectures/Lecture_12/strategy/Castle.h)
 
 file(COPY Lectures/Lecture_10/genes/Ecoli_genes.txt
         DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
@@ -153,6 +193,18 @@ file(COPY Lectures/Lecture_10/genes_custom_model/Ecoli.jpg
 file(COPY Lectures/Lecture_10/genes_custom_model/Genes.txt
         DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 file(COPY Lectures/Lecture_10/genes_custom_model/human.jpg
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Lectures/Lecture_12/iterator/chambord.jpg
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Lectures/Lecture_12/iterator/highclere.jpg
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Lectures/Lecture_12/iterator/neuschwanstein.jpg
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Lectures/Lecture_12/iterator/peles.jpg
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Lectures/Lecture_12/iterator/scaliger.jpg
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY Lectures/Lecture_12/iterator/windsor.jpg
         DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 if (NOT CMAKE_PREFIX_PATH)
